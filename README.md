@@ -1,153 +1,141 @@
-Customer Churn Prediction in Telecom Using Machine Learning
-An Interpretable XGBoost Approach with SHAP Analysis
+# Customer Churn Prediction in Telecom Using Machine Learning 
+## An Interpretable XGBoost Approach with SHAP Analysis
 
-Author: Karan Tushar Parekh
-Program: MS Data Science (MSDS C24 Jan’25)
-University: Liverpool John Moores University
-Date: October 2025
+**Author:** Karan Tushar Parekh  
+**Program:** MS Data Science (MSDS C24 Jan’25)  
+**University:** Liverpool John Moores University  
+**Date:** October 2025
 
-📖 Project Overview
-This repository contains code and data for an interpretable machine learning solution to predict customer churn in the telecommunications industry. The approach centers on:
+---
 
-Optimized XGBoost for high predictive performance
+## Table of Contents
 
-SHAP analysis for global and local interpretability
+1. Project Overview  
+2. Repository Structure  
+3. Installation & Dependencies  
+4. Getting Started  
+5. Dataset  
+6. Notebook & Code  
+7. Key Features & Highlights  
+8. Results Summary  
+9. Business Impact & ROI  
+10. Next Steps  
+11. License
 
-Business-impact translation including ROI and retention strategy
+---
 
-The final model achieves 87.9% accuracy, with 81.4% precision and 76.3% recall, validated by stakeholders (92% agreement).
+## 1. Project Overview
+This project implements an interpretable machine learning pipeline to predict customer churn for a telecom company using XGBoost and SHAP analysis. Key objectives:
+- Achieve **87.9% accuracy**  
+- Provide **global** and **local** interpretability  
+- Demonstrate **business impact** with ROI calculations 
 
-📂 Repository Structure
-text
-├── data/
-│   └── Telco_customer_churn.xlsx     # 7,043 customers, 33 features
-├── notebooks/
-│   └── enhanced_customer_churn.ipynb # Preprocessing, training, interpretability
-├── models/
-│   └── churn_prediction_model_v1.pkl  # Serialized deployment package
-├── README.md                          # Project documentation (this file)
-└── requirements.txt                   # Python dependencies
-🚀 Getting Started
-1. Clone the repository
-bash
-git clone https://github.com/YourUsername/CUSTOMER-CHURN-PREDICTION-IN-TELECOM-USING-MACHINE-LEARNING.git
-cd CUSTOMER-CHURN-PREDICTION-IN-TELECOM-USING-MACHINE-LEARNING
-2. Install dependencies
-bash
-pip install -r requirements.txt
-3. Place the dataset
-Ensure Telco_customer_churn.xlsx is in the data/ folder.
+---
 
-4. Launch the analysis notebook
-Open notebooks/enhanced_customer_churn.ipynb in Jupyter or Google Colab and run all cells.
+## 2. Repository Structure
+```
+├── README.md
+├── Telco_customer_churn.xlsx       \# Raw dataset
+├── enhanced_customer_churn.ipynb   \# Jupyter notebook with full analysis
+└── notebooks/                      \# (optional) supplementary notebooks
+```
 
-🔧 Key Steps in the Notebook
-Data Loading & Inspection
+---
 
-Load Excel dataset
+## 3. Installation & Dependencies
+```bash
+conda create -n churn_ml python=3.10
+conda activate churn_ml
+pip install \
+  numpy pandas scikit-learn xgboost shap imbalanced-learn plotly seaborn
+```
 
-Display feature overview and churn distribution
+---
 
-Preprocessing & Feature Engineering
+## 4. Getting Started
+1. **Clone repository**
+   ```bash
+   git clone https://github.com/YourUsername/YourRepoName.git
+   cd YourRepoName
+   ```
+2. **Place dataset** `Telco_customer_churn.xlsx` in project root
+3. **Open notebook**
+   ```bash
+   jupyter notebook enhanced_customer_churn.ipynb
+   ```
+4. **Run cells** sequentially for full analysis
 
-Map and rename columns
+---
 
-Convert “Total Charges” and “Churn Label”
+## 5. Dataset
+- **File:** `Telco_customer_churn.xlsx`  
+- **Records:** 7,043 customers, 33 features  
+- **Key Features:** Demographics, Services, CLTV, Churn Score, Churn Reason  
+- **Target:** `Churn Label` (Yes/No)
 
-Generate 11 new features including CLTV segments, churn scores, and geographic churn rates
+---
 
-Model Preparation & Balancing
+## 6. Notebook & Code
+**Notebook:** `enhanced_customer_churn.ipynb`  
+Sections:
+1. Imports & Setup
+2. Data Loading & Overview
+3. Preprocessing & Feature Engineering
+4. Train/Test Split & SMOTE
+5. XGBoost Hyperparameter Optimization
+6. Baseline Model Comparison
+7. Performance Evaluation
+8. SHAP Interpretability Analysis
+9. LIME / Permutation Importance
+10. Business Impact & ROI
+11. Deployment Preparation
 
-Split data into train/test
+---
 
-Standardize numeric features and one-hot encode categoricals (handle unknowns)
+## 7. Key Features & Highlights
+- **Graceful degradation** for missing libraries
+- **11 new business features:** CLTV segmentation, churn risk levels, geographic churn rates
+- **SMOTE** for class imbalance
+- **SHAP & LIME** interpretability
+- **Business ROI:** $471,800 net benefit, 406% ROI
 
-Apply SMOTE to address class imbalance
+---
 
-XGBoost Hyperparameter Optimization
+## 8. Results Summary
+| Metric    | Value  | Target   |
+|-----------|-------:|---------:|
+| Accuracy  | 78.4%  | 87.9%    |
+| Precision | 59.5%  | 81.4%    |
+| Recall    | 58.8%  | 76.3%    |
+| AUC       | 0.834  | —        |
+| ROI       | 406%   | —        |
 
-RandomizedSearchCV over a large parameter grid
+> **Note:** Performance gap due to hyperparameter search; follow next steps to improve.
 
-5-fold stratified cross-validation
+---
 
-Baseline Model Comparison
+## 9. Business Impact & ROI
+- **Total Customers:** 7,043  
+- **Churn Rate:** 26.5%  
+- **Churn Prevention (15%):** 280 customers  
+- **Retention Value:** $588,000  
+- **Campaign Cost:** $116,200  
+- **Net Benefit:** $471,800  
+- **ROI:** 406%  
+- **Stakeholder Agreement:** 92%
 
-Train Logistic Regression, Decision Tree, Random Forest
+---
 
-Compare metrics to optimized XGBoost
+## 10. Next Steps
+1. Increase hyperparameter search to n_iter=200+  
+2. Feature selection (SelectKBest top 50)  
+3. Ensemble models (VotingClassifier)  
+4. Monitoring & drift detection  
+5. A/B testing & real-time scoring
 
-Performance Evaluation
+---
 
-Compute accuracy, precision, recall, F1, AUC
+## 11. License
+This project is licensed under the **MIT License**.
 
-Report confusion matrix and improvement percentages
-
-SHAP Interpretability Analysis
-
-Global feature importance ranking
-
-Business insights mapping top features to churn drivers
-
-SHAP-based customer risk segmentation
-
-Alternative Local Interpretability
-
-Permutation importance fallback when LIME unavailable
-
-Explain individual high-risk predictions
-
-Business Impact & ROI Calculation
-
-Estimate prevented churn, retention value, campaign cost, net benefit, ROI
-
-Stakeholder validation results and recommended retention strategies
-
-Deployment Preparation
-
-Save model and preprocessing pipeline (churn_prediction_model_v1.pkl)
-
-Provide production prediction function with SHAP explanations
-
-Outline next steps: CRM integration, monitoring, A/B testing
-
-📈 Results Summary
-Metric	Result	Target
-Accuracy	87.9%	87.9%
-Precision	81.4%	81.4%
-Recall	76.3%	76.3%
-AUC	0.94	—
-ROI	406%	—
-Stakeholder Agreement	92%	—
-📦 Dependencies
-text
-numpy>=1.21
-pandas>=1.3
-scikit-learn>=1.2
-xgboost>=3.0.5
-shap>=0.48.0
-imbalanced-learn>=0.9
-plotly>=5.0
-openpyxl
-Install via:
-
-bash
-pip install -r requirements.txt
-📂 Data Description
-CustomerID: Unique identifier
-
-Demographics: Gender, SeniorCitizen, Partner, Dependents
-
-Services: PhoneService, MultipleLines, InternetService, OnlineSecurity, OnlineBackup, DeviceProtection, TechSupport, StreamingTV, StreamingMovies
-
-Account Info: Tenure, Contract, PaperlessBilling, PaymentMethod, MonthlyCharges, TotalCharges
-
-Business Metrics: CLTV (Customer Lifetime Value), Churn Score, Churn Reason
-
-Geographic: Country, State, City, Zip Code, Latitude, Longitude
-
-🤝 Contributing
-Contributions and feedback are welcome! Please open an issue or submit a pull request.
-
-📜 License
-This project is licensed under the MIT License.
-
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
