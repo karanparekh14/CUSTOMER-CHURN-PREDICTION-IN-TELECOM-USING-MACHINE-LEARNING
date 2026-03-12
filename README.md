@@ -55,8 +55,8 @@ pip install \
 ## 4. Getting Started
 1. **Clone repository**
    ```bash
-   git clone https://github.com/YourUsername/YourRepoName.git
-   cd YourRepoName
+   git clone https://github.com/karanparekh14/CUSTOMER-CHURN-PREDICTION-IN-TELECOM-USING-MACHINE-LEARNING.git
+   cd CUSTOMER-CHURN-PREDICTION-IN-TELECOM-USING-MACHINE-LEARNING
    ```
 2. **Place dataset** `Telco_customer_churn.xlsx` in project root
 3. **Open notebook**
