@@ -1,8 +1,8 @@
-# Customer Churn Prediction in Telecom Using Machine Learning 
+# Customer Churn Prediction in Telecom Using Machine Learning
 ## An Interpretable XGBoost Approach with SHAP Analysis
 
 **Author:** Karan Tushar Parekh  
-**Program:** MS Data Science (MSDS C24 Jan’25)  
+**Program:** MS Data Science (MSDS C24 Jan 2025)  
 **University:** Liverpool John Moores University  
 **Date:** October 2025
 
@@ -25,19 +25,19 @@
 ---
 
 ## 1. Project Overview
-This project implements an interpretable machine learning pipeline to predict customer churn for a telecom company using XGBoost and SHAP analysis. Key objectives:
-- Achieve **87.9% accuracy**  
+This project implements an interpretable machine learning pipeline to predict customer churn for a telecom company using XGBoost and SHAP analysis. Objectives:
+- Build a binary classification model with a target of **87.9% accuracy**  
 - Provide **global** and **local** interpretability  
-- Demonstrate **business impact** with ROI calculations 
+- Demonstrate **business impact** with ROI calculations
 
 ---
 
 ## 2. Repository Structure
 ```
 ├── README.md
-├── Telco_customer_churn.xlsx       \# Raw dataset
-├── enhanced_customer_churn.ipynb   \# Jupyter notebook with full analysis
-└── notebooks/                      \# (optional) supplementary notebooks
+├── Telco_customer_churn.xlsx       # Raw dataset
+├── enhanced_customer_churn.ipynb   # Jupyter notebook with full analysis
+└── notebooks/                      # (optional) supplementary notebooks
 ```
 
 ---
@@ -102,15 +102,15 @@ Sections:
 ---
 
 ## 8. Results Summary
-| Metric    | Value  | Target   |
+| Metric    | Achieved | Target   |
 |-----------|-------:|---------:|
 | Accuracy  | 78.4%  | 87.9%    |
 | Precision | 59.5%  | 81.4%    |
 | Recall    | 58.8%  | 76.3%    |
-| AUC       | 0.834  | —        |
-| ROI       | 406%   | —        |
+| AUC       | 0.834  | n/a      |
+| ROI       | 406%   | n/a      |
 
-> **Note:** Performance gap due to hyperparameter search; follow next steps to improve.
+> **Note:** The gap between achieved and target metrics is down to the limited hyperparameter search. See Next Steps.
 
 ---
 
