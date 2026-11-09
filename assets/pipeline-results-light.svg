@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="600" viewBox="0 0 1200 600" role="img" aria-label="Churn pipeline and held-out test results: XGBoost best AUC 0.848">
+<title>Churn pipeline and held-out test results: XGBoost best AUC 0.848</title>
+<rect width="1200" height="600" rx="16" fill="#ffffff" stroke="#d0d7de"/>
+<text x="40" y="54" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="26" font-weight="700" fill="#1f2328" text-anchor="start">Customer churn: pipeline and results</text>
+<text x="40" y="82" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="15" font-weight="400" fill="#57606a" text-anchor="start">7,043 telecom customers, 26.5 percent churn. Every number below is from the held-out test set in the executed notebook.</text>
+<rect x="40.0" y="112" width="201.6" height="118" rx="12" fill="#ffffff" stroke="#d0d7de" stroke-width="1.2"/>
+<circle cx="64.0" cy="138" r="13" fill="#e7f0fb" stroke="#0969da" stroke-width="1.4"/>
+<text x="64.0" y="143" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="13" font-weight="700" fill="#0969da" text-anchor="middle">1</text>
+<text x="86.0" y="143" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="14.5" font-weight="700" fill="#1f2328" text-anchor="start">Prepare</text>
+<text x="56.0" y="172.0" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12.5" font-weight="400" fill="#57606a" text-anchor="start">33 features, cleaning,</text>
+<text x="56.0" y="189.75" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12.5" font-weight="400" fill="#57606a" text-anchor="start">business features</text>
+<defs><marker id="arrow1" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="#0969da"/></marker><marker id="arrow1s" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="#0969da"/></marker></defs>
+<path d="M 243.6 171.0 L 266.6 171.0" fill="none" stroke="#0969da" stroke-width="2" stroke-linejoin="round" marker-end="url(#arrow1)"/>
+<rect x="269.6" y="112" width="201.6" height="118" rx="12" fill="#ffffff" stroke="#d0d7de" stroke-width="1.2"/>
+<circle cx="293.6" cy="138" r="13" fill="#e7f0fb" stroke="#0969da" stroke-width="1.4"/>
+<text x="293.6" y="143" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="13" font-weight="700" fill="#0969da" text-anchor="middle">2</text>
+<text x="315.6" y="143" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="14.5" font-weight="700" fill="#1f2328" text-anchor="start">Split</text>
+<text x="285.6" y="172.0" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12.5" font-weight="400" fill="#57606a" text-anchor="start">train and test;</text>
+<text x="285.6" y="189.75" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12.5" font-weight="400" fill="#57606a" text-anchor="start">SMOTE on training</text>
+<text x="285.6" y="207.5" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12.5" font-weight="400" fill="#57606a" text-anchor="start">folds only</text>
+<defs><marker id="arrow2" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="#0969da"/></marker><marker id="arrow2s" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="#0969da"/></marker></defs>
+<path d="M 473.20000000000005 171.0 L 496.20000000000005 171.0" fill="none" stroke="#0969da" stroke-width="2" stroke-linejoin="round" marker-end="url(#arrow2)"/>
+<rect x="499.2" y="112" width="201.6" height="118" rx="12" fill="#ffffff" stroke="#d0d7de" stroke-width="1.2"/>
+<circle cx="523.2" cy="138" r="13" fill="#e7f0fb" stroke="#0969da" stroke-width="1.4"/>
+<text x="523.2" y="143" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="13" font-weight="700" fill="#0969da" text-anchor="middle">3</text>
+<text x="545.2" y="143" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="14.5" font-weight="700" fill="#1f2328" text-anchor="start">Tune XGBoost</text>
+<text x="515.2" y="172.0" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12.5" font-weight="400" fill="#57606a" text-anchor="start">randomized search,</text>
+<text x="515.2" y="189.75" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12.5" font-weight="400" fill="#57606a" text-anchor="start">cross-validated</text>
+<defs><marker id="arrow3" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="#0969da"/></marker><marker id="arrow3s" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="#0969da"/></marker></defs>
+<path d="M 702.8 171.0 L 725.8 171.0" fill="none" stroke="#0969da" stroke-width="2" stroke-linejoin="round" marker-end="url(#arrow3)"/>
+<rect x="728.8" y="112" width="201.6" height="118" rx="12" fill="#ffffff" stroke="#d0d7de" stroke-width="1.2"/>
+<circle cx="752.8" cy="138" r="13" fill="#e7f0fb" stroke="#0969da" stroke-width="1.4"/>
+<text x="752.8" y="143" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="13" font-weight="700" fill="#0969da" text-anchor="middle">4</text>
+<text x="774.8" y="143" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="14.5" font-weight="700" fill="#1f2328" text-anchor="start">Compare</text>
+<text x="744.8" y="172.0" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12.5" font-weight="400" fill="#57606a" text-anchor="start">logistic regression,</text>
+<text x="744.8" y="189.75" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12.5" font-weight="400" fill="#57606a" text-anchor="start">decision tree,</text>
+<text x="744.8" y="207.5" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12.5" font-weight="400" fill="#57606a" text-anchor="start">random forest</text>
+<defs><marker id="arrow4" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="#0969da"/></marker><marker id="arrow4s" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="#0969da"/></marker></defs>
+<path d="M 932.4 171.0 L 955.4 171.0" fill="none" stroke="#0969da" stroke-width="2" stroke-linejoin="round" marker-end="url(#arrow4)"/>
+<rect x="958.4" y="112" width="201.6" height="118" rx="12" fill="#ffffff" stroke="#d0d7de" stroke-width="1.2"/>
+<circle cx="982.4" cy="138" r="13" fill="#e7f0fb" stroke="#0969da" stroke-width="1.4"/>
+<text x="982.4" y="143" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="13" font-weight="700" fill="#0969da" text-anchor="middle">5</text>
+<text x="1004.4" y="143" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="14.5" font-weight="700" fill="#1f2328" text-anchor="start">Explain</text>
+<text x="974.4" y="172.0" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12.5" font-weight="400" fill="#57606a" text-anchor="start">SHAP global and local,</text>
+<text x="974.4" y="189.75" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12.5" font-weight="400" fill="#57606a" text-anchor="start">LIME and permutation</text>
+<text x="974.4" y="207.5" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12.5" font-weight="400" fill="#57606a" text-anchor="start">importance as checks</text>
+<text x="40" y="278" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" font-weight="700" fill="#8c959f" text-anchor="start">AUC ON THE HELD-OUT TEST SET</text>
+<text x="40" y="313.68" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="13.5" font-weight="700" fill="#1f2328" text-anchor="start">XGBoost (tuned)</text>
+<rect x="250" y="296" width="520" height="26" rx="6" fill="#f6f8fa"/>
+<rect x="250" y="296" width="440.96" height="26" rx="6" fill="#1a7f37"/>
+<text x="784" y="313.68" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="13.5" font-weight="700" fill="#1f2328" text-anchor="start">0.848</text>
+<text x="40" y="353.68" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="13.5" font-weight="400" fill="#1f2328" text-anchor="start">Random forest</text>
+<rect x="250" y="336" width="520" height="26" rx="6" fill="#f6f8fa"/>
+<rect x="250" y="336" width="438.88" height="26" rx="6" fill="#8c959f"/>
+<text x="784" y="353.68" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="13.5" font-weight="400" fill="#1f2328" text-anchor="start">0.844</text>
+<text x="40" y="393.68" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="13.5" font-weight="400" fill="#1f2328" text-anchor="start">Logistic regression</text>
+<rect x="250" y="376" width="520" height="26" rx="6" fill="#f6f8fa"/>
+<rect x="250" y="376" width="430.56" height="26" rx="6" fill="#8c959f"/>
+<text x="784" y="393.68" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="13.5" font-weight="400" fill="#1f2328" text-anchor="start">0.828</text>
+<text x="40" y="433.68" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="13.5" font-weight="400" fill="#1f2328" text-anchor="start">Decision tree</text>
+<rect x="250" y="416" width="520" height="26" rx="6" fill="#f6f8fa"/>
+<rect x="250" y="416" width="416.52000000000004" height="26" rx="6" fill="#8c959f"/>
+<text x="784" y="433.68" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="13.5" font-weight="400" fill="#1f2328" text-anchor="start">0.801</text>
+<rect x="860" y="280" width="300" height="176" rx="12" fill="#ffffff" stroke="#d0d7de" stroke-width="1.2"/>
+<text x="878" y="306" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="14.5" font-weight="700" fill="#1f2328" text-anchor="start">XGBoost on the test set</text>
+<text x="878" y="336" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="13" font-weight="400" fill="#57606a" text-anchor="start">Accuracy</text>
+<text x="1142" y="336" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="13" font-weight="700" fill="#1f2328" text-anchor="end">78.2%</text>
+<text x="878" y="362" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="13" font-weight="400" fill="#57606a" text-anchor="start">Precision</text>
+<text x="1142" y="362" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="13" font-weight="700" fill="#1f2328" text-anchor="end">59.0%</text>
+<text x="878" y="388" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="13" font-weight="400" fill="#57606a" text-anchor="start">Recall</text>
+<text x="1142" y="388" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="13" font-weight="700" fill="#1f2328" text-anchor="end">58.8%</text>
+<text x="878" y="414" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="13" font-weight="400" fill="#57606a" text-anchor="start">F1</text>
+<text x="1142" y="414" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="13" font-weight="700" fill="#1f2328" text-anchor="end">0.589</text>
+<text x="878" y="444" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="12" font-weight="400" fill="#57606a" text-anchor="start">882 TN · 153 FP · 154 FN · 220 TP</text>
+<rect x="40" y="476" width="1120" height="100" rx="12" fill="#fff8c5" stroke="#9a6700" stroke-width="1.2"/>
+<text x="60" y="504" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="14.5" font-weight="700" fill="#1f2328" text-anchor="start">Why AUC and not accuracy</text>
+<text x="60" y="528.0" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="13" font-weight="400" fill="#1f2328" text-anchor="start">Random forest has the higher accuracy (79.8%), yet XGBoost ranks churners better and explains itself more usefully. Cross-validated AUC</text>
+<text x="60" y="546.46" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="13" font-weight="400" fill="#1f2328" text-anchor="start">reached 0.951 on SMOTE-balanced training folds; that number is not comparable to the test set, so it is not the headline.</text>
+</svg>
